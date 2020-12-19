@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>k8dash</title>
+<!-- begin _includes/seo.html --><title>k8dash - k8dash</title>
 <meta name="description" content="k8dash, an open-source Kubernetes dashboard.">
 
 
@@ -24,6 +24,8 @@
   <meta property="og:description" content="k8dash, an open-source Kubernetes dashboard.">
 
 
+
+  <meta property="og:image" content="/assets/images/website_header_k8dash.png">
 
 
 
@@ -99,7 +101,7 @@
 
   </head>
 
-  <body class="layout--home">
+  <body class="layout--splash">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -162,33 +164,171 @@
 
     <div class="initial-content">
       
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/assets/images/website_header_k8dash.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          k8dash
+
+        
+      </h1>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
 
 
 
 <div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="k8dash">
+    
+    
+    
+
+    <section class="page__content" itemprop="text">
+      <h2 id="what-is-k8dash">What is k8dash?</h2>
+
+<p>A Kubernetes dashboard that helps you understand and manage your cluster at a glance.
+Get started  Join the Community</p>
+
+<h2 id="why-k8dash">Why k8dash?</h2>
+
+<div class="feature__wrapper">
+
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/images/cluster-health_k8dash_website_bucket.png" alt="Monitor Cluster Health" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Monitor Cluster Health</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Quickly view your cluster’s health via real-time charts that help you track poorly performing resources.</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/images/fast-and-live_k8dash_website_bucket.png" alt="Fast and Live Metrics" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Fast and Live Metrics</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Benefit from a Kubernetes dashboard that automatically refreshes and updates in real time.</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/images/responsive_k8dash_website_bucket.png" alt="Responsive UI" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Responsive UI</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Monitor your cluster while on-the-go via the 100% responsive UI that runs on your phone or tablet.</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
   
 
-
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title"></h1>
-    
-    
-
-<h3 class="archive__subtitle">Recent posts</h3>
-
-
-
-
-<div class="entries-list">
-  
 </div>
 
+<h2 id="set-up-k8dash-in-as-little-as-a-minute">Set up k8dash in as little as a minute</h2>
 
+<p>(todo add bootstrap columns for the below)</p>
+<div class="row">
+  <div class="col-md-6">
+    <p>Install k8dash via the available yaml file</p>
 
+    <ul>
+      <li>Download kubernetes-k8dash.yaml</li>
+    </ul>
 
+    <p>Deploy k8dash by running the following command:
+  <code class="language-plaintext highlighter-rouge">kubectl apply -f https://raw.githubusercontent.com/herbrandson/k8dash/master/kubernetes-k8dash.yaml</code></p>
+
+    <p>To learn more, go to the install page.</p>
   </div>
+  <div class="col-md-6">
+    <h4 id="start-in-as-little-as-a-minute">Start in as little as a minute</h4>
+    <p>You can configure k8dash in multiple ways, making it totally customizable. A few features you can install include:</p>
+    <ul>
+      <li>k8dash makes using OpenId Connect for authentication easy</li>
+      <li>If you do not have an ingress server set up, you can utilize a NodePort service
+&lt;/div&gt;</li>
+    </ul>
+  </div>
+
+
+Join the community on GitHub Discussions.
 </div>
+
+    </section>
+  </article>
+</div>
+
     </div>
 
     
