@@ -3,4 +3,10 @@
 <url>
 <loc>/</loc>
 </url>
+<url>
+<loc>/install/</loc>
+</url>
+<url>
+<loc>/overview/</loc>
+</url>
 </urlset>

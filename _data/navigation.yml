@@ -1,12 +1,35 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Overview"
+    url: /overview/
+    description: "Overview"
+  - title: "Install"
+    url: /install/
+  - title: "Getting Started with k8dash"
+    url: /getting-started/
+  - title: "How to Contribute"
+    url: /how-to-contribute/
+  - title: "Brand Guidelines"
+    url: /brand-guidelines/
+  - title: "Community"
+    url: /community/
+  - title: "License"
+    url: /license/
+
+docs:
+  - title: "Overview"
+    url: /overview/
+    description: "Overview"
+  - title: "Install"
+    url: /install/
+  - title: "Getting Started with k8dash"
+    url: /getting-started/
+  - title: "How to Contribute"
+    url: /how-to-contribute/
+  - title: "Brand Guidelines"
+    url: /brand-guidelines/
+  - title: "Community"
+    url: /community/
+  - title: "License"
+    url: /license/
+
