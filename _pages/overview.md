@@ -5,7 +5,7 @@ permalink: /overview/
 ---
 k8dash (pronounced /kāt,daSH/ or Kate Dash) is an open source Kubernetes dashboard that helps you quickly understand the concepts of your cluster in a visual way. You can also manage your cluster components via the dashboard.
 
-[video here]
+(TODO video here)
 
 ## k8dash at a glance:
 
@@ -14,6 +14,8 @@ k8dash (pronounced /kāt,daSH/ or Kate Dash) is an open source Kubernetes dashbo
 * In May, 2020, Indeed Engineering adopted the k8dash project. k8dash is installed as a standard at Indeed.
 
 Please star the project at [github.com/indeedeng/k8dash](https://github.com/indeedeng/k8dash).
+
+(TODO add screenshots here)
 
 With k8dash you can do the following:
 * Fully manage your cluster, including namespaces, nodes, pods, replica sets, deployments, storage, RBAC, and more.
@@ -27,6 +29,8 @@ With k8dash you can do the following:
 * If you’re already using OIDC to secure your cluster, k8dash makes extending this to your dashboards easy: configure 2-3 environment variables and you’re up and running. No special authenticating proxies or other complicated configurations are required.
 
 ## Why k8dash
+
+(TODO finish table)
 
 | Feature | k8dash | Octant | Lens | k9s | Default Web UI | 
 | ------- | ------ | ------ | ---- | --- | -------------- |
