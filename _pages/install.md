@@ -2,7 +2,11 @@
 layout: single
 title: Install
 permalink: /install/
+toc: true
+sidebar:
+  nav: "docs"
 ---
+
 To install and run k8dash on your Kubernetes cluster, follow these steps:
 1. Download [kubernetes-k8dash.yaml](https://raw.githubusercontent.com/herbrandson/k8dash/master/kubernetes-k8dash.yaml)
 2. Deploy k8dash by running the following command:
@@ -69,14 +73,14 @@ k8dash makes using OpenId Connect for authentication easy. Assuming your cluster
 
 To learn more about configuring a cluster for OIDC, check out these great links:
 
-* https://kubernetes.io/docs/reference/access-authn-authz/authentication/
-* https://medium.com/@mrbobbytables/kubernetes-day-2-operations-authn-authz-with-oidc-and-a-little-help-from-keycloak-de4ea1bdbbe
-* https://medium.com/@int128/kubectl-with-openid-connect-43120b451672
-* https://www.google.com/search?q=kubernetes+configure+oidc&oq=kubernetes+configure+oidc&aqs=chrome..69i57j0.4772j0j7&sourceid=chrome&ie=UTF-8
+* [Authenticating \| Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/authentication/)
+* [Kubernetes Day 2 Operations: AuthN/AuthZ with OIDC and a Little Help From Keycloak \| by Bob Killen \| Medium](https://medium.com/@mrbobbytables/kubernetes-day-2-operations-authn-authz-with-oidc-and-a-little-help-from-keycloak-de4ea1bdbbe)
+* [kubectl with OpenID Connect. TL;DR \| by Hidetake Iwata \| Medium](https://medium.com/@int128/kubectl-with-openid-connect-43120b451672)
+* [Kubernetes configure OIDC - Google Search](https://www.google.com/search?q=kubernetes+configure+oidc&oq=kubernetes+configure+oidc&aqs=chrome..69i57j0.4772j0j7&sourceid=chrome&ie=UTF-8)
 
 You can deploy k8dash with OIDC support using something like the following script.
 
-> **NOTE:** never trust a file downloaded from the internet. Make sure to review the contents of kubernetes-k8dash-oidc.yaml before running the script below.
+> **NOTE:** never trust a file downloaded from the internet. Make sure to review the contents of [kubernetes-k8dash-oidc.yaml](https://raw.githubusercontent.com/herbrandson/k8dash/master/kubernetes-k8dash-oidc.yaml) before running the script below.
 
 ```
 OIDC_URL=<put your endpoint url here... something like https://accounts.google.com>
@@ -92,6 +96,7 @@ kubectl apply -f https://raw.githubusercontent.com/herbrandson/k8dash/master/kub
 ```
 
 Additionally, there are a few other OIDC options you can provide via environment variables. First is `OIDC_SCOPES`. The default value for this value is `openid email`, but additional scopes can also be added using something like `OIDC_SCOPES="openid email groups"`.
+
 The other option is `OIDC_METADATA`. k8dash uses the excellent [node-openid-client](https://github.com/panva/node-openid-client) module. `OIDC_METADATA` will take a json string and pass it to the `Client` constructor. Docs [here](https://github.com/panva/node-openid-client/blob/master/docs/README.md#client). For example, `OIDC_METADATA='{"token_endpoint_auth_method":"client_secret_post"}`
 
 ## Running k8dash with NodePort

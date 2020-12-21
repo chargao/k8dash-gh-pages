@@ -11,6 +11,9 @@ primary:
     image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
     title: "Image 2 title caption"
+toc: true
+sidebar:
+  nav: "docs"
 ---
 
 ## Brand and logo
@@ -26,7 +29,8 @@ Secondary logo
 
 Logo mark
 
-#### Logo usage
+### Logo usage
+
 The k8dash logo is available in full color and white accent. The full color logo should only appear against white backgrounds. The white accent logo should go against a contrasting color background.
 
 When you use the logo, please follow these directives:
@@ -37,9 +41,6 @@ When you use the logo, please follow these directives:
 * Do not distort the logo by changing its proportions.
 * Do not place text or other elements on top of the logo.
 * Do not rotate the logo.
-
-
-
 
 ## Colors
 

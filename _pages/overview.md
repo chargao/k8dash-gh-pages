@@ -2,10 +2,12 @@
 layout: single
 title: Overview
 permalink: /overview/
+sidebar:
+  nav: "docs"
 ---
 k8dash (pronounced /kāt,daSH/ or Kate Dash) is an open source Kubernetes dashboard that helps you quickly understand the concepts of your cluster in a visual way. You can also manage your cluster components via the dashboard.
 
-(TODO video here)
+{% include video id="u-1jGAhAHAM" provider="youtube" %}
 
 ## k8dash at a glance:
 
@@ -30,14 +32,17 @@ With k8dash you can do the following:
 
 ## Why k8dash
 
-(TODO finish table)
-
-| Feature | k8dash | Octant | Lens | k9s | Default Web UI | 
-| ------- | ------ | ------ | ---- | --- | -------------- |
-| | | | | | | 
-| | | | | | | 
-| | | | | | | 
-| | | | | | | 
+| Feature                    | k8dash | Octant | Lens | k9s | Default Web UI | 
+| -------------------------- |:------:|:------:|:----:|:---:|:--------------:|
+|Web based (no download required) | x |        |      |     | x              |
+|Cluster management               | x | x      | x    | x   | x              |
+|Mobile optimized                 | x |        |      |     |                |
+|Real-time dashboards             | x | x      | x    |     |                |
+|Native OIDC integration          | x |        |      |     |                | 
+|Multi cluster management         |   | x      | x    | x   |                | 
+|RBAC Support                     | x | x      | x    | x   | x              | 
+|Plugin Functionality             |   | x      | x    | x   |                | 
+|Metrics                          | x | x      | x    |    |x (not real-time)| 
 
 #### A deeper dive into the open source Kubernetes dashboards listed above:
 

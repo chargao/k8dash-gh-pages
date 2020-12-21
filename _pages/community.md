@@ -2,6 +2,8 @@
 layout: single
 title: Community
 permalink: /community/
+sidebar:
+  nav: "docs"
 ---
 
 #### [GitHub](https://github.com/indeedeng/k8dash) 
