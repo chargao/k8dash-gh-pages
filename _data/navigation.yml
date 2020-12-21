@@ -5,7 +5,7 @@ main:
     description: "Overview"
   - title: "Install"
     url: /install/
-  - title: "Getting Started with k8dash"
+  - title: "Getting Started"
     url: /getting-started/
   - title: "How to Contribute"
     url: /how-to-contribute/
@@ -22,7 +22,7 @@ docs:
     description: "Overview"
   - title: "Install"
     url: /install/
-  - title: "Getting Started with k8dash"
+  - title: "Getting Started"
     url: /getting-started/
   - title: "How to Contribute"
     url: /how-to-contribute/
